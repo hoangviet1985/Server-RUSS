@@ -67,7 +67,7 @@ public class UDPOperation {
         while(socket != null && tcpSocket != null && run.equals("1"))
         {
             byte[] temp = vs.getnextframe();//get the image frame
-            InetAddress dest = InetAddress.getByName("192.168.1.10");//ip address of the computer, which the image will be sent to
+            InetAddress dest = InetAddress.getByName("192.168.0.10");//ip address of the computer, which the image will be sent to
             System.out.println(temp.length);
             tcpOutput.println(temp.length);//inform the size of this image to the client computer
             int bytePointer = 0;//this pointer will browse through the array of bytes of the image frame
